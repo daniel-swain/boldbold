@@ -1,5 +1,5 @@
-const webpack = require("webpack");
-const path = require("path");
+const webpack = require('webpack'); // eslint-disable-line
+const path = require('path');
 
 /*
  * We've enabled UglifyJSPlugin for you! This minifies your app
@@ -9,15 +9,15 @@ const path = require("path");
  *
  */
 
-const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: ['babel-polyfill', './src/index.jsx'],
 
   output: {
-    filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "public")
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'public')
   },
 
   module: {
@@ -25,10 +25,10 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
+        loader: 'babel-loader',
 
         options: {
-          presets: ["env"]
+          presets: ['env']
         }
       },
       {
@@ -36,13 +36,13 @@ module.exports = {
 
         use: [
           {
-            loader: "style-loader"
+            loader: 'style-loader'
           },
           {
-            loader: "css-loader"
+            loader: 'css-loader'
           },
           {
-            loader: "sass-loader"
+            loader: 'sass-loader'
           }
         ]
       },
@@ -50,7 +50,7 @@ module.exports = {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader",
+            loader: 'html-loader',
             options: {
               minimize: true
             }
@@ -60,11 +60,16 @@ module.exports = {
     ]
   },
 
+  resolve: {
+    mainFiles: ['index'],
+    extensions: ['.js', '.jsx', '.scss']
+  },
+
   plugins: [
     new UglifyJSPlugin(),
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
-      filename: "./index.html"
+      template: './src/index.html',
+      filename: './index.html'
     })
   ]
 };
