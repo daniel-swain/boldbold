@@ -1,0 +1,19 @@
+.list-item {
+  opacity: 0;
+  float: right;
+
+  .link-btn,
+  .link-btn:focus {
+    border: none;
+    color: $accent;
+    padding-right: 0px;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.menu-actions {
+  list-style-type: none;
+}

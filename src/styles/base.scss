@@ -7,4 +7,8 @@
 @import './variables';
 
 /* App styles */
-@import './app'
+@import './app';
+
+/* Component styles */
+@import '../components/menu/menu';
+@import '../components/header/header';

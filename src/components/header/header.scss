@@ -1,0 +1,12 @@
+.header {
+  border: 1px solid $accent;
+  margin: 1em 0em;
+  opacity: 0.25;
+  padding: 20px;
+  text-align: center;
+
+  .title {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

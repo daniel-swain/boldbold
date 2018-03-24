@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render properly 1`] = `
+<div
+  className="header"
+>
+  <span
+    className="title"
+  >
+    Daniel Swain
+  </span>
+</div>
+`;
