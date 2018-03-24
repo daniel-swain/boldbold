@@ -1,0 +1,23 @@
+{
+  "name": "boldbold",
+  "version": "1.0.0",
+  "description": "A React App hosted on Firebase",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/daniel-swain/boldbold.git"
+  },
+  "keywords": [
+    "react",
+    "firebase"
+  ],
+  "author": "Daniel Swain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniel-swain/boldbold/issues"
+  },
+  "homepage": "https://github.com/daniel-swain/boldbold#readme"
+}
