@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "animejs": "^2.2.0",
+    "isomorphic-fetch": "^2.2.1",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"

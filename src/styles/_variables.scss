@@ -1,13 +1,21 @@
 
-/* Background color */
-$dark: #263238;
+/* Secondary color */
+$bluegrey: #263238;
+$lightbluegrey: #4f5b62;
+$darkbluegrey: #000a12;
 
-$background: $dark;
+$secondary: $bluegrey;
+$lightsecondary: $lightbluegrey;
+$darksecondary: $darkbluegrey;
+
+$background: $secondary;
 
 /* Primary color & accent */
+$pink: #ff80ab;
 $lightpink: #FCE4EC;
-$pink: #F48FB1;
+$darkpink: #c94f7c;
 
 $primary: $pink;
 $accent: $lightpink;
+$accent2: $darkpink;
 

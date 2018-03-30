@@ -14,7 +14,7 @@ class Header extends React.PureComponent {
   render() {
     return (
       <div className="header">
-        <span className="title">Daniel Swain</span>
+        <span className="title">cmon step it up</span>
       </div>
     );
   }

@@ -7,7 +7,7 @@ exports[`<Header /> should render properly 1`] = `
   <span
     className="title"
   >
-    Daniel Swain
+    cmon step it up
   </span>
 </div>
 `;

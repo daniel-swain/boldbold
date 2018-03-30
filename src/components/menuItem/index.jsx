@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const MenuItem = ({ name, func = () => {} }) => (
-  <li className={`list-item ${name}`}>
+  <li className={`menu-item ${name}-action`}>
     <button className="link-btn" onClick={() => func()}>{name}</button>
   </li>
 );

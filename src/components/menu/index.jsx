@@ -19,9 +19,10 @@ class Menu extends React.PureComponent {
   componentDidMount() {
     this.actionsItems.forEach((item, i) => {
       anime({
-        targets: `.list-item.${item.name}`,
+        targets: `.menu-item.${item.name}-action`,
         translateX: [-100, 0],
         opacity: 1,
+        elasticity: (el, val) => ((200 + val) * 200),
         delay: (250 * (i + 1))
       });
     });

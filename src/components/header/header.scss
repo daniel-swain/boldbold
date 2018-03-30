@@ -1,11 +1,11 @@
 .header {
-  border: 1px solid $accent;
-  margin: 1em 0em;
-  opacity: 0.25;
-  padding: 20px;
-  text-align: center;
+  // border: 1px solid $accent;
+  opacity: 0.48;
+  margin-bottom: 2em;
+  text-align: right;
 
   .title {
+    font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
   }
