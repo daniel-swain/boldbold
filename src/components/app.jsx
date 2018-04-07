@@ -1,14 +1,15 @@
 import React from 'react';
 
 import Menu from './menu';
+// import Feed from './feed';
+import BallPit from './ballContainer';
 
 const App = () => (
   <div className="container">
     <div className="row">
       <Menu className="three columns" />
-      <div className="feed nine columns">
-        This is the feed
-      </div>
+      {/* <Feed className="nine columns" /> */}
+      <BallPit className="nine columns" />
     </div>
   </div>
 );
