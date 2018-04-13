@@ -9,10 +9,12 @@
 /* App styles */
 @import './app';
 
+/* Higher Order Component Styles */
+@import '../hoc/withBallContainer/withBallContainer';
+
 /* Component styles */
 @import '../components/menu/menu';
 @import '../components/menuItem/menuItem';
 @import '../components/header/header';
 @import '../components/feed/feed';
-@import '../components/ballContainer/ballContainer';
 @import '../components/ball/ball';

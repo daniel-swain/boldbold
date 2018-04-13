@@ -1,17 +1,18 @@
 import React from 'react';
 
 import Menu from './menu';
-// import Feed from './feed';
-import BallPit from './ballContainer';
+import Feed from './feed';
+import withBallContainer from '../hoc/withBallContainer';
 
-const App = () => (
+const App = (props) => (
   <div className="container">
     <div className="row">
       <Menu className="three columns" />
-      {/* <Feed className="nine columns" /> */}
-      <BallPit className="nine columns" />
+      <Feed className="nine columns" />
+      {/* <BallPit className="nine columns" /> */}
     </div>
+    {props.children}
   </div>
 );
 
-export default App;
+export default withBallContainer(App);
