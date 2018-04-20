@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import anime from 'animejs';
 
 const getPoint = (x, y, angle, index, radius) => ({
-  x: Math.sin((index + 1) * angle) * radius + x,
-  y: Math.cos((index + 1) * angle) * radius + y
+  x: (Math.sin((index + 1) * angle) * radius) + x,
+  y: (Math.cos((index + 1) * angle) * radius) + y
 });
 
 class Burst extends React.PureComponent {
@@ -46,8 +46,8 @@ class Burst extends React.PureComponent {
 
   animateBurst = () => {
     this.ballKeys.forEach((color, index) => {
-      const innerRadius = 10 + 10 * Math.random();
-      const outerRadius = this.props.baseRadius - 50 * (Math.random() - 1);
+      const innerRadius = 10 + (10 * Math.random());
+      const outerRadius = this.props.baseRadius - (50 * (Math.random() - 1));
 
       const origin = this.getPoint(index, innerRadius);
       const destination = this.getPoint(index, outerRadius);

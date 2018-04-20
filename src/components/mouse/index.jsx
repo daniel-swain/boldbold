@@ -6,14 +6,13 @@ import Flare from './animations/flare';
 class Mouse extends React.PureComponent {
   static defaultProps = {
     id: '',
-    children: () => {},
     showBurst: true,
     showFlare: true
   };
 
   static propTypes = {
+    children: PropTypes.func.isRequired,
     id: PropTypes.string,
-    children: PropTypes.func,
     showBurst: PropTypes.bool,
     showFlare: PropTypes.bool
   };
@@ -33,7 +32,7 @@ class Mouse extends React.PureComponent {
       >
         {this.props.showBurst && <Burst {...this.state} />}
         {this.props.showFlare && <Flare {...this.state} />}
-        {this.props.children}
+        {this.props.children()}
       </div>
     );
   }
