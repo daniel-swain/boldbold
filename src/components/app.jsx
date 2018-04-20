@@ -1,18 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import Menu from './menu';
-import Feed from './feed';
-import withBallContainer from '../hoc/withBallContainer';
+import Mouse from './mouse';
 
-const App = (props) => (
-  <div className="container">
-    <div className="row">
-      <Menu className="three columns" />
-      <Feed className="nine columns" />
-      {/* <BallPit className="nine columns" /> */}
-    </div>
-    {props.children}
-  </div>
+const App = props => (
+  <Mouse id="app">{() => <div className="container">{props.children}</div>}</Mouse>
 );
 
-export default withBallContainer(App);
+App.propTypes = {
+  children: PropTypes.node.isRequired
+};
+
+export default App;
