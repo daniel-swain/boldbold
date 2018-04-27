@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import anime from 'animejs';
 
-import { withTheme } from '../../../contexts/theme';
 import ThemedBall from './ball';
 
 const getPoint = (x, y, angle, index, radius) => ({
