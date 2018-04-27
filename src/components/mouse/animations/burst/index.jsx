@@ -44,6 +44,13 @@ class Burst extends React.PureComponent {
     (x, i) => this.props.colors[i % this.props.colors.length]
   );
 
+  animationProperties = {
+    opacity: [1, 0],
+    width: [25, 0],
+    height: [25, 0],
+    easing: 'easeOutCubic',
+  }
+
   animateBurst = () => {
     this.ballKeys.forEach((color, index) => {
       const innerRadius = 10 + 10 * Math.random();
@@ -56,11 +63,8 @@ class Burst extends React.PureComponent {
         targets: `.${color}.ball-${index}.ball`,
         translateX: [origin.x, destination.x],
         translateY: [origin.y, destination.y],
-        opacity: [1, 0],
-        width: [25, 0],
-        height: [25, 0],
-        easing: 'easeOutCubic',
-        delay: index * 10 * Math.random()
+        delay: index * 10 * Math.random(),
+        ...this.animationProperties
       });
     });
   };

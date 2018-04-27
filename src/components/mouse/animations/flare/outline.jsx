@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { withTheme } from '../../../contexts/theme';
+import { withTheme } from '../../../../contexts/theme';
 
 export const Outline = styled.div`
   background-color: transparent;

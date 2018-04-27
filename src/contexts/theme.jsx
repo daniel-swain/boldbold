@@ -1,14 +1,14 @@
 import React, { createContext, Component } from 'react';
 import PropTypes from 'prop-types';
 
-const DEFAULT_THEME = 'default';
-const ALTERNATE_THEME = 'alternate';
+export const DEFAULT_THEME = 'default';
+export const ALTERNATE_THEME = 'alternate';
 
 const PINK = '#ff80ab';
 const LIGHT_PINK = '#FCE4EC';
 const WHITE = '#fff';
 
-const themes = {
+export const themes = {
   [DEFAULT_THEME]: {
     primary: PINK,
     accent: LIGHT_PINK
@@ -27,7 +27,7 @@ export const ThemeContext = createContext({
 class Theme extends Component {
   static propTypes = { children: PropTypes.node.isRequired }
 
-  state = { current: DEFAULT_THEME, theme: themes[DEFAULT_THEME] }
+  state = { current: DEFAULT_THEME, theme: themes[DEFAULT_THEME], foobar: () => console.log("foobar") }
 
   render() {
     return (

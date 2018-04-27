@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Burst /> <Ball /> should render 1`] = `
+.c0 {
+  height: 0px;
+  width: 0px;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.c0.primary {
+  background-color: #ff80ab;
+}
+
+.c0.accent {
+  background-color: #FCE4EC;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`<Burst /> should render 1`] = `
+Array [
+  <Component
+    className="primary ball-0 ball"
+    key="primary0"
+    style={
+      Object {
+        "zIndex": 0,
+      }
+    }
+  />,
+  <Component
+    className="accent ball-1 ball"
+    key="accent1"
+    style={
+      Object {
+        "zIndex": 1,
+      }
+    }
+  />,
+  <Component
+    className="primary ball-2 ball"
+    key="primary2"
+    style={
+      Object {
+        "zIndex": 2,
+      }
+    }
+  />,
+  <Component
+    className="accent ball-3 ball"
+    key="accent3"
+    style={
+      Object {
+        "zIndex": 3,
+      }
+    }
+  />,
+  <Component
+    className="primary ball-4 ball"
+    key="primary4"
+    style={
+      Object {
+        "zIndex": 4,
+      }
+    }
+  />,
+  <Component
+    className="accent ball-5 ball"
+    key="accent5"
+    style={
+      Object {
+        "zIndex": 5,
+      }
+    }
+  />,
+  <Component
+    className="primary ball-6 ball"
+    key="primary6"
+    style={
+      Object {
+        "zIndex": 6,
+      }
+    }
+  />,
+  <Component
+    className="accent ball-7 ball"
+    key="accent7"
+    style={
+      Object {
+        "zIndex": 7,
+      }
+    }
+  />,
+  <Component
+    className="primary ball-8 ball"
+    key="primary8"
+    style={
+      Object {
+        "zIndex": 8,
+      }
+    }
+  />,
+  <Component
+    className="accent ball-9 ball"
+    key="accent9"
+    style={
+      Object {
+        "zIndex": 9,
+      }
+    }
+  />,
+  <Component
+    className="primary ball-10 ball"
+    key="primary10"
+    style={
+      Object {
+        "zIndex": 10,
+      }
+    }
+  />,
+  <Component
+    className="accent ball-11 ball"
+    key="accent11"
+    style={
+      Object {
+        "zIndex": 11,
+      }
+    }
+  />,
+  <Component
+    className="primary ball-12 ball"
+    key="primary12"
+    style={
+      Object {
+        "zIndex": 12,
+      }
+    }
+  />,
+  <Component
+    className="accent ball-13 ball"
+    key="accent13"
+    style={
+      Object {
+        "zIndex": 13,
+      }
+    }
+  />,
+  <Component
+    className="primary ball-14 ball"
+    key="primary14"
+    style={
+      Object {
+        "zIndex": 14,
+      }
+    }
+  />,
+  <Component
+    className="accent ball-15 ball"
+    key="accent15"
+    style={
+      Object {
+        "zIndex": 15,
+      }
+    }
+  />,
+  <Component
+    className="primary ball-16 ball"
+    key="primary16"
+    style={
+      Object {
+        "zIndex": 16,
+      }
+    }
+  />,
+  <Component
+    className="accent ball-17 ball"
+    key="accent17"
+    style={
+      Object {
+        "zIndex": 17,
+      }
+    }
+  />,
+  <Component
+    className="primary ball-18 ball"
+    key="primary18"
+    style={
+      Object {
+        "zIndex": 18,
+      }
+    }
+  />,
+  <Component
+    className="accent ball-19 ball"
+    key="accent19"
+    style={
+      Object {
+        "zIndex": 19,
+      }
+    }
+  />,
+]
+`;
