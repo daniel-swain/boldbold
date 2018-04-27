@@ -2,9 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import anime from 'animejs';
 
+import { withTheme } from '../../../contexts/theme';
+import ThemedBall from './ball';
+
 const getPoint = (x, y, angle, index, radius) => ({
-  x: (Math.sin((index + 1) * angle) * radius) + x,
-  y: (Math.cos((index + 1) * angle) * radius) + y
+  x: Math.sin((index + 1) * angle) * radius + x,
+  y: Math.cos((index + 1) * angle) * radius + y
 });
 
 class Burst extends React.PureComponent {
@@ -39,15 +42,13 @@ class Burst extends React.PureComponent {
 
   ballKeys = Array.from(
     { length: this.props.numOfBalls },
-    (x, i) => (
-      this.props.colors[i % this.props.colors.length]
-    )
+    (x, i) => this.props.colors[i % this.props.colors.length]
   );
 
   animateBurst = () => {
     this.ballKeys.forEach((color, index) => {
-      const innerRadius = 10 + (10 * Math.random());
-      const outerRadius = this.props.baseRadius - (50 * (Math.random() - 1));
+      const innerRadius = 10 + 10 * Math.random();
+      const outerRadius = this.props.baseRadius - 50 * (Math.random() - 1);
 
       const origin = this.getPoint(index, innerRadius);
       const destination = this.getPoint(index, outerRadius);
@@ -67,7 +68,7 @@ class Burst extends React.PureComponent {
 
   render() {
     return this.ballKeys.map((key, index) => (
-      <div
+      <ThemedBall
         key={`${key + index}`}
         style={{ zIndex: index }}
         className={`${key} ball-${index} ball`}

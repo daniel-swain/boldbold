@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import anime from 'animejs';
 
+import ThemedOutline from './outline';
+
 class Flare extends React.PureComponent {
   static defaultProps = {
     baseRadius: 150
@@ -41,18 +43,7 @@ class Flare extends React.PureComponent {
 
   render() {
     return (
-      <div
-        className="flare"
-        style={{
-          backgroundColor: 'transparent',
-          border: 'solid 1px lightgrey',
-          borderRadius: '100%',
-          height: '0px',
-          position: 'absolute',
-          width: '0px',
-          zIndex: '99'
-        }}
-      />
+      <ThemedOutline className="flare" />
     );
   }
 }
